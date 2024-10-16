@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>KOLEJ PROFESSIONAL MARA INDERA MAHKOTA</h1>
+    <h2>UPDATE MENTOR</h2>
+
+    <form action="save_update_mentor/{{ data.menid }}" method="post">
+        {% csrf_token %}
+            Mentor Id : <input type="text" name="menid" value="{{ data.menid }}" disabled="false"> <br>
+            Mentor Name : <input type="text" name="name" value="{{ data.menname }}"> <br>
+            Mentor Room Number : <input type="text" name="roomno" value="{{ data.menroono }}"> <br>
+            <input type="submit" value="SAVE">
+    </form> <br><br>
+    <a href ="/libAR/mentor/">BACK</a>
+
+</body>
+</html>
