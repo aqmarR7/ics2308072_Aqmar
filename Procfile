@@ -1,0 +1,1 @@
+web: gunicorn ics2308072_Aqmar.wsgi --log_file-
